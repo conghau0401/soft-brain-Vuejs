@@ -1,0 +1,28 @@
+version: 0.2
+run-as: root
+phases:
+  install:
+    commands:
+      - echo "Start build"
+  pre_build:
+    commands:
+      - REPOSITORY_URI=$ECR/$NAMESPACE-$SERVICE_NAME
+      - IMAGE_URI=$REPOSITORY_URI:$IMAGE_TAG
+  build:
+    commands:
+      - docker build -t $IMAGE_URI .
+      - docker tag $REPOSITORY_URI:latest $REPOSITORY_URI:$IMAGE_TAG
+  post_build:
+    commands:
+      - aws ecr get-login-password | docker login --username AWS --password-stdin $ECR
+      - docker push $IMAGE_URI
+      - printf '[{"name":"%s","imageUri":"%s"}]' $SERVICE_NAME $IMAGE_URI > imagedefinitions.json
+      - printf '{"ImageURI":"%s"}' $IMAGE_URI > imageDetail.json
+      - printf '{"imageURI":"%s"}' $IMAGE_URI > imageUris.json
+artifacts:
+  files:
+    - imagedefinitions.json
+    - imageUris.json
+    - appspec.yaml
+    - imageDetail.json
+  discard-paths: yes

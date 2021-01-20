@@ -1,0 +1,113 @@
+button{
+  margin-left: 300px;
+}
+
+.time-wrapper {
+  @apply relative;
+  @apply w-full;
+}
+.select-box {
+  @apply rounded-sm;
+  @apply border;
+  @apply py-2;
+  @apply pl-2;
+  @apply text-sm;
+  @apply cursor-pointer;
+  @apply hover:border-primary;
+  @apply hover:text-primary;
+  @apply z-10;
+  @apply relative;
+  span {
+    @apply w-4;
+    @apply text-center;
+  }
+  span::-webkit-outer-spin-button,
+  span::-webkit-inner-spin-button {
+    @apply appearance-none;
+  }
+  .time {
+    @apply flex;
+    @apply justify-start;
+  }
+}
+.icon-close {
+  @apply absolute;
+  @apply top-1/2;
+  @apply transform -translate-y-1/2;
+  @apply right-2;
+  @apply text-xs;
+  @apply text-gray-9;
+}
+.option-box {
+  @apply flex;
+  @apply items-center ;
+  @apply p-2;
+  @apply rounded-sm;
+  @apply border;
+  @apply border-gray-e;
+  box-shadow: 0 5px 15px 0 #b0afaf;
+  @apply absolute;
+  @apply top-full;
+  @apply left-0;
+  @apply w-3/4;
+  @apply bg-white;
+  @apply z-10;
+  .icon {
+    @apply block;
+    @apply mx-1;
+    @apply text-sm;
+  }
+  .select-date-time {
+    @apply shadow-inner;
+    @apply w-1/2;
+    @apply rounded-xs;
+    @apply overflow-hidden;
+    @apply border-none;
+    @apply relative;
+    height: 90px;
+    box-shadow: 0 1px 8px 0 #b0afaf inset;
+    .control-arrow {
+      @apply absolute;
+      @apply top-0;
+      @apply right-0;
+      @apply z-10;
+      @apply w-full;
+      @apply text-center;
+      @apply text-gray-6;
+      @apply flex;
+      @apply items-end;
+      @apply justify-center;
+      @apply cursor-pointer;
+      @apply tracking-widest;
+      height: 30px;
+      i {
+        @apply hidden;
+      }
+      &:hover i {
+        @apply block;
+      }
+      &.down {
+        @apply top-auto;
+        @apply bottom-0;
+        @apply items-start;
+      }
+    }
+    .value-date-time {
+      @apply text-sm;
+      @apply text-center;
+      @apply border-b;
+      @apply border-gray-e;
+      @apply text-gray-c;
+      @apply cursor-pointer;
+      @apply mx-1;
+      height: 30px;
+      line-height: 30px;
+      &.active {
+        @apply text-gray-3;
+      }
+      &:last-child {
+        @apply border-none;
+      }
+    }
+  }
+}

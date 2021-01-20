@@ -1,0 +1,59 @@
+@font-face {
+  font-family: 'Noto Sans CJK JP';
+  font-style: normal;
+  font-weight: 100;
+  src: local('Noto Sans CJK JP Thin'),
+  url('/assets/fonts/NotoSansCJK/NotoSansJP-Thin.woff2') format('woff2'),
+  url('/assets/fonts/NotoSansCJK/NotoSansJP-Thin.woff') format('woff'),
+  url('/assets/fonts/NotoSansCJK/NotoSansJP-Thin.otf') format('otf');
+}
+
+@font-face {
+  font-family: 'Noto Sans CJK JP';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Noto Sans CJK JP Light'),
+  url('/assets/fonts/NotoSansCJK/NotoSansJP-Light.woff2') format('woff2'),
+  url('/assets/fonts/NotoSansCJK/NotoSansJP-Light.woff') format('woff'),
+  url('/assets/fonts/NotoSansCJK/NotoSansJP-Light.otf') format('otf');
+}
+
+@font-face {
+  font-family: 'Noto Sans CJK JP';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Noto Sans CJK JP Regular'),
+  url('/assets/fonts/NotoSansCJK/NotoSansJP-Regular.woff2') format('woff2'),
+  url('/assets/fonts/NotoSansCJK/NotoSansJP-Regular.woff') format('woff'),
+  url('/assets/fonts/NotoSansCJK/NotoSansJP-Regular.otf') format('otf');
+}
+
+@font-face {
+  font-family: 'Noto Sans CJK JP';
+  font-style: normal;
+  font-weight: 500;
+  src: local('Noto Sans CJK JP Medium'),
+  url('/assets/fonts/NotoSansCJK/NotoSansJP-Medium.woff2') format('woff2'),
+  url('/assets/fonts/NotoSansCJK/NotoSansJP-Medium.woff') format('woff'),
+  url('/assets/fonts/NotoSansCJK/NotoSansJP-Medium.otf') format('otf');
+}
+
+@font-face {
+  font-family: 'Noto Sans CJK JP';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Noto Sans CJK JP Bold'),
+  url('/assets/fonts/NotoSansCJK/NotoSansJP-Bold.woff2') format('woff2'),
+  url('/assets/fonts/NotoSansCJK/NotoSansJP-Bold.woff') format('woff'),
+  url('/assets/fonts/NotoSansCJK/NotoSansJP-Bold.otf') format('otf');
+}
+
+@font-face {
+  font-family: 'Noto Sans CJK JP';
+  font-style: normal;
+  font-weight: 900;
+  src: local('Noto Sans CJK JP Black'),
+  url('/assets/fonts/NotoSansCJK/NotoSansJP-Black.woff2') format('woff2'),
+  url('/assets/fonts/NotoSansCJK/NotoSansJP-Black.woff') format('woff'),
+  url('/assets/fonts/NotoSansCJK/NotoSansJP-Black.otf') format('otf');
+}

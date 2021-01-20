@@ -1,0 +1,25 @@
+.input-box {
+  @apply bg-gray-e;
+
+  @apply p-2;
+
+  @apply border;
+  @apply border-gray-c;
+  @apply rounded-sm;
+
+  @apply hover:bg-white;
+  @apply hover:border-primary;
+
+  @apply focus:bg-white;
+  @apply focus:border-primary;
+  @apply focus:text-primary;
+}
+
+.input-required {
+  @apply text-white;
+  @apply bg-light-red;
+  @apply text-2xs;
+  @apply rounded-xs;
+  @apply mx-2;
+  @apply px-2;
+}

@@ -1,0 +1,177 @@
+.filter-wrapper {
+  @apply w-full;
+  box-shadow: 0 5px 22px 0 rgba(0, 0, 0, 0.25);
+  .filter-table {
+    @apply p-4;
+    .radio-option {
+      @apply absolute;
+      @apply top-8;
+      @apply right-4;
+      @apply bg-white;
+      @apply w-10/12;
+      box-shadow: 0 5px 15px 0 #b0afaf;
+      @apply rounded;
+      @apply p-4;
+      @apply z-10;
+      .vertical {
+        label {
+          @apply justify-start;
+        }
+      }
+    }
+    .method-box {
+      @apply mb-4;
+    }
+    .option {
+      @apply mb-2;
+      @apply relative;
+      label.option-icon {
+        @apply absolute;
+        @apply top-0;
+        @apply right-0;
+        width: 24px;
+        height: 24px;
+        @apply text-center;
+        @apply rounded-xs;
+        @apply flex;
+        @apply items-center;
+        @apply justify-center;
+        @apply hover:bg-gray-e;
+        @apply cursor-pointer;
+        &:hover {
+          i {
+            @apply text-primary;
+          }
+        }
+        i {
+          @apply text-gray-9;
+        }
+      }
+    }
+    .text-option {
+      @apply relative;
+      .input-arround {
+        @apply relative;
+      }
+      input {
+        @apply bg-opacity-30;
+      }
+      .methods-icon {
+        @apply absolute;
+        @apply top-1/2;
+        transform: translateY(-50%);
+        @apply right-2;
+        @apply z-10;
+        @apply w-8;
+        @apply p-1;
+        i {
+          @apply p-1;
+          @apply hover:bg-gray-e;
+          @apply rounded-xs;
+          @apply cursor-pointer;
+          @apply text-gray-9;
+          @apply hover:text-primary;
+        }
+      }
+    }
+    .number-option {
+      .item-number {
+        @apply flex;
+        @apply justify-start;
+        @apply items-center;
+        @apply mb-2;
+        .input-element {
+          @apply w-8/12;
+          input {
+            @apply text-right;
+            @apply pr-8;
+            @apply bg-opacity-30;
+            @apply w-full;
+            @apply appearance-none;
+          }
+          input[type=number]::-webkit-inner-spin-button,
+          input[type=number]::-webkit-outer-spin-button {
+            @apply appearance-none;
+          }
+        }
+        p.title {
+          @apply w-4/12;
+          @apply pl-4;
+        }
+      }
+
+    }
+    .checkbox-option {
+      .checkbox-top {
+        @apply flex;
+        @apply justify-between;
+        .filter-checkbox {
+          @apply mx-1;
+          @apply py-1;
+          @apply px-0;
+          @apply text-sm;
+          width: 37%;
+          label {
+            @apply cursor-pointer;
+          }
+          &:first-child {
+            width: 26%;
+            @apply ml-0;
+          }
+          &:last-child {
+            @apply mr-0;
+          }
+        }
+      }
+      .checkbox-box {
+        @apply h-64;
+        @apply overflow-y-scroll;
+        @apply mt-2;
+        &::-webkit-scrollbar-track
+        {
+          @apply bg-gray-e;
+          @apply rounded-md;
+        }
+        &::-webkit-scrollbar
+        {
+          @apply w-2;
+          @apply bg-gray-9;
+          @apply rounded-md;
+        }
+        &::-webkit-scrollbar-thumb
+        {
+          @apply bg-gray-9;
+          @apply rounded-md;
+        }
+        label {
+          @apply justify-start;
+        }
+      }
+    }
+  }
+  .filter-button {
+    @apply flex;
+    @apply items-center;
+    @apply justify-center;
+    @apply py-4;
+    @apply px-8;
+    @apply border-t;
+    @apply border-gray-e;
+    .item-button {
+      @apply w-2/5;
+      @apply mx-1;
+      @apply bg-gray-e;
+      @apply text-gray-9;
+      @apply border-none;
+      @apply pointer-events-none;
+      &.BUTTON_TYPE_5 {
+        @apply pointer-events-auto;
+        @apply bg-primary;
+        @apply text-white;
+      }
+      &:last-child {
+        @apply w-3/5;
+      }
+    }
+  }
+}

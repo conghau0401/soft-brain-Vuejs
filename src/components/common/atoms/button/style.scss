@@ -1,0 +1,114 @@
+.hover-primary {
+  @apply hover:text-primary;
+  @apply hover:border-primary;
+  @apply hover:bg-gray-e;
+}
+
+.gray-e-border {
+  @apply border;
+  @apply border-gray-e;
+}
+
+.BUTTON_TYPE_1 {
+  i {
+    display: none;
+  }
+
+  @apply gray-e-border;
+  @apply hover-primary;
+  @apply p-2;
+}
+
+.BUTTON_TYPE_2 {
+  span {
+    @apply hidden;
+  }
+
+  @apply gray-e-border;
+  @apply hover-primary;
+  @apply p-2;
+}
+
+.BUTTON_TYPE_3 {
+  i {
+    @apply m-1;
+  }
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 5px 12px 0px;
+
+  @apply text-green;
+  @apply bg-white;
+  @apply hover:text-white;
+  @apply hover:bg-green;
+  @apply px-8;
+  @apply py-2;
+}
+
+.BUTTON_TYPE_12 {
+  i {
+    @apply m-1;
+  }
+  @apply text-green;
+  @apply bg-white;
+  @apply hover:text-white;
+  @apply hover:bg-teal;
+  @apply p-2;
+}
+
+.BUTTON_TYPE_4 {
+  @apply p-1;
+  @apply hover-primary;
+  @apply rounded-xs;
+}
+
+.BUTTON_TYPE_5 {
+  i {
+    @apply hidden;
+  }
+
+  @apply bg-primary;
+  @apply hover:bg-dark-blue;
+  @apply text-white;
+  @apply w-full;
+  @apply py-2;
+  @apply px-4;
+}
+
+.BUTTON_TYPE_6 {
+  @apply BUTTON_TYPE_2;
+  @apply px-4;
+}
+
+.BUTTON_TYPE_7 {
+  @apply gray-e-border;
+  @apply hover-primary;
+  @apply p-2;
+}
+
+.BUTTON_TYPE_8 {
+  i {
+    @apply hidden;
+  }
+  font-weight: 700;
+  @apply hover:bg-gray-c;
+  @apply hover:text-primary;
+  @apply w-full;
+  @apply py-2;
+  @apply px-4;
+}
+
+.BUTTON_TYPE_9 {
+  /* empty */
+}
+
+.BUTTON_TYPE_10 {
+  @apply bg-white;
+  @apply p-1;
+  @apply rounded-none;
+  @apply rounded-br-xs;
+  box-shadow: rgba(204, 204, 204, 0.8) 2px 2px 4px 0px
+}
+
+.BUTTON_TYPE_11 {
+  @apply p-1;
+  @apply hover:bg-gray-e;
+}

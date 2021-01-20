@@ -1,0 +1,51 @@
+.LABEL_TYPE_1 {}
+
+.LABEL_TYPE_2 {
+  @apply text-black;
+}
+
+.LABEL_TYPE_3 {
+  @apply text-primary;
+}
+
+.LABEL_TYPE_4 {
+  @apply text-gray-6;
+}
+
+.LABEL_TYPE_5 {
+  @apply text-xs;
+}
+
+.LABEL_TYPE_6 {
+  @apply text-black;
+  @apply text-xs;
+}
+
+.LABEL_TYPE_7 {
+  @apply text-primary;
+  @apply text-xs;
+}
+
+.LABEL_TYPE_8 {
+  @apply text-gray-6;
+  @apply text-xs;
+}
+
+.LABEL_TYPE_9 {
+  @apply text-lg;
+}
+
+.LABEL_TYPE_10 {
+  @apply text-black;
+  @apply text-lg;
+}
+
+.LABEL_TYPE_11 {
+  @apply text-primary;
+  @apply text-lg;
+}
+
+.LABEL_TYPE_12 {
+  @apply text-gray-6;
+  @apply text-lg;
+}

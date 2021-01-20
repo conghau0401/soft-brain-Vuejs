@@ -1,0 +1,55 @@
+html {
+  height: 100%;
+}
+
+body {
+  @apply bg-white;
+  @apply text-gray-3;
+
+  height: 100%;
+
+  font-family: "Noto Sans CJK JP", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  font-style: normal;
+  line-height: 21px;
+
+  text-align: left;
+  text-decoration-color: #fff;
+  text-decoration-style: solid;
+  text-size-adjust: 100%;
+  text-rendering: optimizeLegibility; /* Smoothing */
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+}
+
+button {
+  font-weight: inherit;
+  font-size: inherit;
+  color: inherit;
+
+  @apply select-none;
+  @apply focus:outline-none;
+}
+
+select {
+  @apply focus:outline-none;
+}
+
+span {
+  @apply select-none;
+}
+
+input {
+  @apply focus:outline-none;
+}
+
+label {
+  @apply select-none;
+}
+
+i {
+  font-weight: inherit;
+  font-size: inherit;
+  color: inherit;
+}

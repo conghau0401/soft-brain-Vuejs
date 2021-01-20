@@ -1,0 +1,60 @@
+button{
+  margin-left: 300px;
+}
+
+.calendar-wrapper {
+  @apply inline-block;
+  @apply w-32;
+}
+
+.calendar-wrapper::v-deep {
+  .weekkend-days {
+    @apply text-dark-red;
+  }
+
+  .vc-weekday:nth-of-type(6),
+  .vc-weekday:nth-of-type(7) {
+    @apply text-dark-red;
+  }
+  .is-not-in-month .vc-day-content {
+    opacity: 0.1 !important;
+  }
+}
+
+.select-box {
+  @apply rounded-sm;
+  @apply border;
+  @apply py-0.5;
+  @apply pl-2;
+  @apply text-xs;
+  @apply cursor-pointer;
+  @apply hover:border-primary;
+  @apply hover:text-primary;
+  @apply z-10;
+  @apply relative;
+  span {
+    @apply w-4;
+    @apply text-center;
+  }
+  span::-webkit-outer-spin-button,
+  span::-webkit-inner-spin-button {
+    @apply appearance-none;
+  }
+}
+
+.icon-close {
+  @apply absolute;
+  @apply top-1/2;
+  @apply transform -translate-y-1/2;
+  @apply right-2;
+  @apply text-xs;
+  @apply text-gray-9;
+}
+
+.option-box {
+  @apply flex;
+  @apply items-center ;
+  @apply p-2;
+  @apply rounded-sm;
+  box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.15);
+}

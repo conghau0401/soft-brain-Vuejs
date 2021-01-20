@@ -1,0 +1,53 @@
+@import "font.scss";
+@import "tailwind.scss";
+@import "reset.scss";
+@import "input.scss";
+@import "border.scss";
+
+.tailwind-wrapper {
+  @apply bg-white;
+  @apply overflow-scroll;
+  @apply border;
+  @apply w-128;
+  @apply p-8;
+}
+
+.center {
+  @apply flex;
+  @apply justify-center;
+  @apply items-center;
+}
+
+.app-flex {
+  &-start {
+    @apply flex;
+    @apply items-center;
+    @apply justify-start;
+  }
+  &-center {
+    @apply flex;
+    @apply items-center;
+    @apply justify-center;
+  }
+  &-between {
+    @apply flex;
+    @apply items-center;
+    @apply justify-between;
+  }
+  &-end {
+    @apply flex;
+    @apply items-center;
+    @apply justify-end;
+  }
+}
+
+.full {
+  @apply w-full;
+  @apply h-full;
+}
+
+.hover-primary {
+  @apply hover:text-primary;
+  @apply hover:border-primary;
+  @apply hover:bg-gray-e;
+}
